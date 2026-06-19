@@ -1,144 +1,82 @@
-{
-  "lessons": [
-    {
-      "chapter": 21,
-      "part": 1,
-      "title": "Generative AI Beyond Text: An Introduction to GANs & Diffusion Models",
-      "status": "complete",
-      "youtube_id": "UQMq8rGyzwI"
-    },
-    {
-      "chapter": 22,
-      "part": 1,
-      "title": "Generative Adversarial Networks (GANs): The Art Forgers of AI",
-      "status": "complete",
-      "youtube_id": "6p9tCIkReM0"
-    },
-    {
-      "chapter": 23,
-      "part": 1,
-      "title": "Diffusion Models Demystified: Creating Images from Noise",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 24,
-      "part": 1,
-      "title": "Text-to-Image Generation: Prompting for Visuals",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 25,
-      "part": 1,
-      "title": "Building a Simple Image Generation App: From Concept to Code",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 26,
-      "part": 1,
-      "title": "Building Smarter Agents: Planning and Reasoning",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 27,
-      "part": 1,
-      "title": "Tool Use for LLMs: Giving Your AI Hands and Eyes (Practical API Integration)",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 28,
-      "part": 1,
-      "title": "Memory for Agents: Beyond Vector Databases",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 29,
-      "part": 1,
-      "title": "Multi-Agent Systems: AI Teams Working Together",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 30,
-      "part": 1,
-      "title": "Designing Autonomous Agents: The Future of AI Action",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 31,
-      "part": 1,
-      "title": "MLOps Fundamentals: Bringing AI Models to Life (Deployment & Versioning)",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 32,
-      "part": 1,
-      "title": "Monitoring and Maintaining AI Models: Keeping Your AI Healthy",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 33,
-      "part": 1,
-      "title": "Scalable AI Architectures: Designing for Growth",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 34,
-      "part": 1,
-      "title": "Cloud AI Services: Leveraging AWS, GCP, Azure for AI",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 35,
-      "part": 1,
-      "title": "Optimizing AI Costs: Smart Spending for Smart Models",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 36,
-      "part": 1,
-      "title": "Ethical AI: Building Fair and Responsible Systems",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 37,
-      "part": 1,
-      "title": "AI Bias: Unmasking Hidden Prejudices in Your Models",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 38,
-      "part": 1,
-      "title": "Explainable AI (XAI): Understanding Why Your AI Does What It Does",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 39,
-      "part": 1,
-      "title": "Probabilistic AI: Dealing with Uncertainty",
-      "status": "pending",
-      "youtube_id": null
-    },
-    {
-      "chapter": 40,
-      "part": 1,
-      "title": "The Future of AI: Emerging Trends and What's Next for Developers",
-      "status": "pending",
-      "youtube_id": null
-    }
-  ]
-}
+[
+  {
+    "episode": 1,
+    "title": "The Colony That Vanished",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The Roanoke Colony disappearance of 1587",
+    "brief": "In 1587, 115 English settlers vanished from Roanoke Island without a trace. The only clue they left behind was the word 'CROATOAN' carved into a wooden post."
+  },
+  {
+    "episode": 2,
+    "title": "The Dancing Plague of 1518",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The Strasbourg Dancing Plague of 1518",
+    "brief": "In 1518, hundreds of Strasbourg citizens suddenly began dancing uncontrollably for days and weeks. Many died of exhaustion, strokes, or heart attacks."
+  },
+  {
+    "episode": 3,
+    "title": "The Poisoning of the Green",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The toxic arsenic green wallpapers of Victorian England",
+    "brief": "In Victorian England, a vibrant pigment called Scheele's Green became incredibly fashionable. Little did they know, it was packed with deadly arsenic, slowly poisoning entire families in their own homes."
+  },
+  {
+    "episode": 4,
+    "title": "The Ships in the Ice",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "Sir John Franklin's lost Arctic expedition of 1845",
+    "brief": "Franklin's expedition set out to find the Northwest Passage with two state-of-the-art ships, HMS Erebus and HMS Terror. They got trapped in the ice, and all 129 men vanished into the frozen wilderness."
+  },
+  {
+    "episode": 5,
+    "title": "The Aztec Sound of Death",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The Aztec Death Whistle history and horror",
+    "brief": "Unearthing the terrifying skull-shaped whistles found in Aztec temples. When blown, they make a sound described as 'a thousand screaming corpses.'"
+  },
+  {
+    "episode": 6,
+    "title": "The 19th Century Vampires",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The New England Vampire Panic",
+    "brief": "In the 1800s, consumption (tuberculosis) ravaged New England. Desperate townspeople believed the deceased were rising from their graves to drain the living, leading to gruesome body exhumations."
+  },
+  {
+    "episode": 7,
+    "title": "The Library of Dust",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The secrets of the Vatican Secret Archives",
+    "brief": "A journey into the most guarded archives in the world, containing centuries of secrets, trials of heretics, and transcripts of exorcisms."
+  },
+  {
+    "episode": 8,
+    "title": "The Devil’s Footprints",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The Devon footprints of 1855",
+    "brief": "After a heavy snowfall in Devon, England, a single line of mysterious cloven hoof-like prints appeared overnight, stretching for 100 miles, crossing high walls and rooftops."
+  },
+  {
+    "episode": 9,
+    "title": "The Death of the Explorer",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The mysterious death of Meriwether Lewis in 1809",
+    "brief": "The co-leader of the Lewis and Clark expedition died of gunshot wounds in a remote cabin. Officially ruled a suicide, strange details suggest it was cold-blooded murder."
+  },
+  {
+    "episode": 10,
+    "title": "The Poison Cup",
+    "status": "pending",
+    "youtube_id": null,
+    "topic": "The toxic makeup of Queen Elizabeth I",
+    "brief": "Queen Elizabeth I covered her face in Venetian Ceruse, a cosmetics mixture made of toxic white lead and vinegar, slowly corroding her skin and poisoning her body over decades."
+  }
+]
