@@ -79,22 +79,24 @@ def generate_curriculum(previous_titles=None):
     try:
         client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
 
-        #Optional: Add prior lesson titles for continuation
+        # Optional: Add prior lesson titles for continuation
         history = ""
         if previous_titles:
             formatted = "\n".join([f"{i+1}. {t}" for i, t in enumerate(previous_titles)])
             history = f"The following lessons have already been created:\n{formatted}\n\nPlease continue from where this series left off.\n"
 
         prompt = f"""
-        You are an expert AI educator. Generate a curriculum for a YouTube series called 'AI for Developers by {YOUR_NAME}'.
-        {history}
-        The style must be: 'Assume the viewer is a beginner or non-technical person starting their journey into AI as a developer.
-        Use simple real-world analogies, relatable examples, and then connect to technical concepts.'
+        You are a viral content strategist who creates MrBeast-style "Big Idea" content for YouTube.
 
-        The curriculum must guide a developer from absolute beginner to advanced AI, covering foundations like Generative AI, LLMs, Vector Databases, and Agentic AI...
-        ...then continue into deep AI topics like Reinforcement Learning, Transformers internals, multi-agent systems, tool use, LangGraph, AI architecture, and more.
+        Generate a list of 10 video topics that are:
+        - High-stakes, curiosity-driven, and addictive
+        - Start with phrases like "What If", "I Gave Away", "I Spent", "I Bought"
+        - About money, challenges, mind-blowing scenarios, or social experiments
+        - Designed for fast-paced, high-retention YouTube Shorts and long-form videos
 
-        Respond with ONLY a valid JSON object. The object must contain a key "lessons" which is a list of 20 lesson objects.
+        The style should be: "Assume the viewer is a general audience looking for entertaining, mind-blowing content. Use simple, exciting language that keeps them watching."
+
+        Respond with ONLY a valid JSON object. The object must contain a key "lessons" which is a list of 10 lesson objects.
         Each lesson object must have these keys: "chapter", "part", "title", "status" (defaulted to "pending"), and "youtube_id" (defaulted to null).
         """
         response = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
@@ -106,21 +108,43 @@ def generate_curriculum(previous_titles=None):
         print(f"❌ CRITICAL ERROR: Failed to generate curriculum. {e}")
         raise
 
-
 def generate_lesson_content(lesson_title):
-    """Generates the content for one long-form lesson and its promotional short."""
+    """Generates the content for one MrBeast-style 'Big Idea' lesson."""
     print(f"🤖 Generating content for lesson: '{lesson_title}'...")
     try:
         client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
         prompt = f"""
-        You are creating a lesson for the 'AI for Developers by {YOUR_NAME}' series. The topic is '{lesson_title}'.
-        The style is: Assume the viewer is a beginner developer or non-tech person who wants to learn AI from scratch.
-        Use analogies and clear, simple language. Each concept must be explained from a developer's perspective, assuming no prior AI or ML knowledge.
+        You are a world-class YouTube scriptwriter specializing in viral "Big Idea" content in the style of MrBeast.
+
+        The topic is: '{lesson_title}'
+
+        Write a high-energy, addictive, and fast-paced script that follows this EXACT viral structure:
+
+        1. THE GOLDEN 3-SECOND HOOK (CRITICAL):
+           - Start with a shocking, curiosity-driven, or high-stakes statement.
+           - The viewer MUST NOT scroll past.
+           - Example: "I just gave away $1,000,000 to strangers... but there's a catch."
+
+        2. THE MECHANISM (Explain the "How"):
+           - Briefly explain the core concept or challenge.
+           - Use the simplest language possible (explain like I'm 5).
+
+        3. THE TWIST (40-Second Mark):
+           - Introduce an unexpected turn or a mind-blowing fact.
+           - This keeps viewers watching until the end.
+
+        4. RETENTION HACKS (Pacing):
+           - Change the visual scene or angle every 6-8 seconds.
+           - Add a "Retention Point" (summary or mini-example) every 45 seconds.
+
+        5. POWERFUL CALL TO ACTION (CTA):
+           - End with a confident, direct CTA.
+           - Example: "Subscribe now so you don't miss the next insane challenge!"
 
         Generate a JSON response with three keys:
-        1. "long_form_slides": A list of 7 to 8 slide objects for a longer, more detailed main video. Each object needs a "title" and "content" key.
-        2. "short_form_highlight": A single, punchy, 1-2 sentence summary for a YouTube Short.
-        3. "hashtags": A string of 5-7 relevant, space-separated hashtags for this lesson (e.g., "#GenerativeAI #LLM #Developer","#NeuralNetworks #BeginnerAI #AIforDevelopers").
+        1. "long_form_slides": A list of 7-8 slide objects for a longer, more detailed video. Each object needs a "title" and "content" key with punchy, exciting text.
+        2. "short_form_highlight": A single, punchy, 60-second summary for a YouTube Short.
+        3. "hashtags": A string of 5-7 relevant hashtags (e.g., "#BigIdea #Challenge #Giveaway #Viral #WhatIf").
 
         Return only valid JSON.
         """
@@ -132,7 +156,6 @@ def generate_lesson_content(lesson_title):
     except Exception as e:
         print(f"❌ ERROR: Failed to generate lesson content: {e}")
         raise
-
 
 # def generate_visuals(output_dir, video_type, slide_content=None, thumbnail_title=None, slide_number=0, total_slides=0):
 #     """Generates a single professional, PPT-style slide or a thumbnail."""
