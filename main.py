@@ -63,10 +63,11 @@ def produce_lesson_videos(lesson):
     outro_slide = {"title": "Thanks for Watching!", "content": "Like, Share & Subscribe for more daily AI content!\n#AIforDevelopers"}
     all_slides = [intro_slide] + lesson_content['long_form_slides'] + [outro_slide]
 
+    # 🔥 CHANGED: MrBeast-style intro and outro
     slide_scripts = [
-        f"Hello and welcome to AI for Developers. I'm {YOUR_NAME} talking bot. Today’s lesson is titled {lesson['title']}.",
+        f"Welcome to the channel! Today we're exploring: {lesson['title']}. Let's dive into this insane scenario!",
         *[s['content'] for s in lesson_content['long_form_slides']],
-        "Thanks for watching! If you found this helpful, make sure to subscribe to our channel and hit the like button."
+        f"Thanks for watching! If you enjoyed this, subscribe now so you don't miss the next mind-blowing video! And let me know in the comments what you think!"
     ]
 
     slide_audio_paths = []
@@ -99,16 +100,16 @@ def produce_lesson_videos(lesson):
     )
 
     print("\n--- Producing Short Video ---")
-    # short_script = f"{lesson_content['short_form_highlight']}"
+    # 🔥 CHANGED: Short script with call to action
     short_script = (f"{lesson_content['short_form_highlight']}\n\n"
-    f"Link to the full lesson is in the description below.")
+    f"Subscribe for more Big Ideas!")
     short_audio_mp3_path = OUTPUT_DIR / f"short_audio_{unique_id}.mp3"
     short_audio_path = text_to_speech(short_script, short_audio_mp3_path)
 
     short_slide_dir = OUTPUT_DIR / f"slides_short_{unique_id}"
     short_slide_content = {
-        "title": "Quick Tip!",
-        "content": f"{lesson_content['short_form_highlight']}\n\n#AI for developers by chaitanya"
+        "title": "Big Idea!",
+        "content": f"{lesson_content['short_form_highlight']}\n\n#BigIdea #Viral #WhatIf"
     }
     short_slide_path = generate_visuals(
         output_dir=short_slide_dir,
@@ -125,13 +126,14 @@ def produce_lesson_videos(lesson):
     short_thumb_path = generate_visuals(
         output_dir=OUTPUT_DIR,
         video_type='short',
-        thumbnail_title=f"Quick Tip: {lesson['title']}"
+        thumbnail_title=f"Big Idea: {lesson['title']}"
     )
 
     print("\n📤 Uploading to YouTube...")
-    hashtags = lesson_content.get("hashtags", "#AI #Developer #LearnAI")
-    long_desc = f"Part of the 'AI for Developers' series by {YOUR_NAME}.\n\nToday's Lesson: {lesson['title']}\n\n{hashtags}"
-    long_tags = "AI, Artificial Intelligence, Developer, Programming, Tutorial, " + lesson['title'].replace(" ", ", ")
+    # 🔥 CHANGED: MrBeast-style metadata
+    hashtags = lesson_content.get("hashtags", "#BigIdea #Viral #WhatIf #Challenge #Giveaway")
+    long_desc = f"Big Idea: {lesson['title']}\n\n{hashtags}"
+    long_tags = "Big Idea, Viral, Challenge, Giveaway, What If, " + lesson['title'].replace(" ", ", ")
 
     long_video_id = upload_to_youtube(
         long_video_path,
@@ -146,17 +148,17 @@ def produce_lesson_videos(lesson):
         time.sleep(30)
         highlight = (lesson_content.get('short_form_highlight') or '').strip()
         if not highlight:
-            highlight = f"AI Quick Tip: {lesson['title']}"
+            highlight = f"Big Idea: {lesson['title']}"
         short_title = f"{highlight[:90].rstrip()} #Shorts"
-        # short_desc = f"Watch the full lesson with {YOUR_NAME} here: https://www.youtube.com/watch?v={long_video_id}\n\n#AI #Programming #Tech #Developer"
+        # 🔥 CHANGED: MrBeast-style short description
         short_desc = (f"{lesson_content['short_form_highlight']}\n\n"
-                      f"Watch the full lesson with {YOUR_NAME} here: https://www.youtube.com/watch?v={long_video_id}\n\n"
+                      f"Watch the full Big Idea here: https://www.youtube.com/watch?v={long_video_id}\n\n"
                       f"{hashtags}")
         upload_to_youtube(
             short_video_path,
             short_title.strip(),
             short_desc,
-            "AI,Shorts,TechTip",
+            "BigIdea,Viral,Challenge",
             short_thumb_path
         )
         return long_video_id
