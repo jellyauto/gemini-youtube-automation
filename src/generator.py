@@ -332,7 +332,7 @@ def generate_visuals(output_dir, video_type, slide_content=None, thumbnail_title
         # Footer
         footer_height = int(height * 0.06)
         draw.rectangle([0, height - footer_height, width, height], fill=(25, 40, 65, 200))
-        draw.text((40, height - footer_height + 12), f"AI for Developers by {YOUR_NAME}", font=footer_font, fill=(180, 180, 180))
+        draw.text((40, height - footer_height + 12), "jwstudio", font=footer_font, fill=(180, 180, 180))
 
         if total_slides > 0:
             slide_num_text = f"Slide {slide_number} of {total_slides}"
