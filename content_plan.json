@@ -1,82 +1,74 @@
-[
-  {
-    "episode": 1,
-    "title": "What If We Gave Away $1,000,000?",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "The economic and social chaos of giving away a million dollars",
-    "brief": "What would happen if someone gave away $1,000,000 in a single day? Would the winner go broke? Would it change their life forever? Explore the extreme hypothetical of a massive giveaway."
-  },
-  {
-    "episode": 2,
-    "title": "What If The Sun Disappeared For 1 Second?",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "The catastrophic effects of the sun vanishing for one second",
-    "brief": "What would happen if the sun just blinked out for one second? Would we survive? What would be the immediate consequences on Earth?"
-  },
-  {
-    "episode": 3,
-    "title": "I Gave Away My Entire Car Collection",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "Giving away luxury cars to strangers",
-    "brief": "I gave away my entire collection of luxury cars to random strangers. Their reactions were unbelievable. Who got them? Why did I do it?"
-  },
-  {
-    "episode": 4,
-    "title": "What If Everyone Got $1,000,000?",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "The global consequences of everyone receiving $1,000,000",
-    "brief": "What if every person in the world woke up with $1,000,000 in their bank account? Would the economy collapse? Would society change forever?"
-  },
-  {
-    "episode": 5,
-    "title": "I Spent $100,000 On Random Strangers",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "A social experiment giving away $100,000 to strangers",
-    "brief": "I gave away $100,000 to random strangers on the street. Watch their reactions. Some cried. Some were shocked. What would you do if a stranger gave you $10,000?"
-  },
-  {
-    "episode": 6,
-    "title": "What If Money Didn't Exist?",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "A world without money or currency",
-    "brief": "What if money suddenly disappeared from the world? Would society collapse? How would we trade, work, and survive without currency?"
-  },
-  {
-    "episode": 7,
-    "title": "I Bought Everything In A Store For Strangers",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "Buying out an entire store and giving it away",
-    "brief": "I walked into a store and bought everything on the shelves... then gave it all away to strangers. Their reactions were priceless."
-  },
-  {
-    "episode": 8,
-    "title": "What If You Could Time Travel For 1 Minute?",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "The consequences of having just 60 seconds to time travel",
-    "brief": "If you had just one minute to travel back in time, what would you do? Would you try to change history? Would you warn yourself about something?"
-  },
-  {
-    "episode": 9,
-    "title": "I Gave Away $10,000 On The Street Every Hour",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "Giving away $10,000 every hour for 24 hours",
-    "brief": "I gave away $10,000 every hour for 24 hours straight. 24 strangers received $10,000 each. Their reactions, their stories, and the emotional moments."
-  },
-  {
-    "episode": 10,
-    "title": "What If Everyone Was A Millionaire?",
-    "status": "pending",
-    "youtube_id": null,
-    "topic": "A world where everyone is a millionaire",
-    "brief": "What if everyone in the world was a millionaire? Would inflation destroy the economy? Would prices skyrocket? Explore the mind-blowing consequences."
-  }
-]
+{
+  "lessons": [
+    {
+      "chapter": 1,
+      "part": 1,
+      "title": "What If We Gave Away $1,000,000?",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 2,
+      "part": 1,
+      "title": "What If The Sun Disappeared For 1 Second?",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 3,
+      "part": 1,
+      "title": "I Gave Away My Entire Car Collection",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 4,
+      "part": 1,
+      "title": "What If Everyone Got $1,000,000?",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 5,
+      "part": 1,
+      "title": "I Spent $100,000 On Random Strangers",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 6,
+      "part": 1,
+      "title": "What If Money Didn't Exist?",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 7,
+      "part": 1,
+      "title": "I Bought Everything In A Store For Strangers",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 8,
+      "part": 1,
+      "title": "What If You Could Time Travel For 1 Minute?",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 9,
+      "part": 1,
+      "title": "I Gave Away $10,000 On The Street Every Hour",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 10,
+      "part": 1,
+      "title": "What If Everyone Was A Millionaire?",
+      "status": "pending",
+      "youtube_id": null
+    }
+  ]
+}
